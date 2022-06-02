@@ -20,7 +20,7 @@ Tools needed:
 
 How to Install :
 
-git clone https://github.com/Helloguru499/Xss-recon.git
+git clone https://github.com/Helloguru499/Filter-urls.git
 
 Usage:
 
