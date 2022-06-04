@@ -9,9 +9,14 @@ echo -e "\033[32m
 
 "
 if [ ! -d targets ]; then
-   mkdir -p targets/$1
+   mkdir targets
 fi  
-cd targets/$1
+cd targets
+
+if [ ! -d targets ]; then
+   mkdir $1
+fi
+cd $1
 
 if [ -f $1-xss ] ; then
     rm $(ls|grep $1)
