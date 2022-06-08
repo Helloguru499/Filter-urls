@@ -50,11 +50,4 @@ for host in $(cat $1-final)
 do
 curl -s $i |grep -qs "<script>confirm(1)" && echo  -e "$host \033[31mVulnerable\n\033[m" ;
 done
-echo -e "\033[31m∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ONE LINER DONE NOW GOING FOR KNOXSS∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞\033[m"
 
-
-echo -e "\033[31m∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞KNOXSS STARTING∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞\033[m"
-for i in $(cat $1-final)
-do
-curl https://knoxss.me/api/v3 -d target=$i -H 'X-API-KEY: ';
-done
