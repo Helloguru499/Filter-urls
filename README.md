@@ -24,8 +24,8 @@ git clone https://github.com/Helloguru499/Filter-urls.git
 
 Usage:
 
-cd Xss-recon
+cd Filter-urls
 
-chmod +x xss.sh
+chmod +x fil-url.sh
 
-./xss.sh target.com
+./fil-url.sh target.com
